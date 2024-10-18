@@ -37,7 +37,7 @@ Now,
 open up you local host and port
 ```
 ## Steps to follow in azure cloud
-1.  Create azure container registry and copy Login server,user name  and password  from Access keys to be needed while login from local vs
+1.  Create azure container registry and copy Login server,user name  and password  from Access keys to be needed while login from local vs code 
 2.  Create Web app 
  
    
@@ -46,11 +46,11 @@ open up you local host and port
 ## To build Docker Image and push in azure container Registry
 Run from terminal:
 ```bash
-docker build -t creditregistry1.azurecr.io/tipsapp:latest .
+docker build -t tipsregistry.azurecr.io/tipsapp:latest .
 ```
 login to azure registry 
 ```bash
-docker login creditregistry1.azurecr.io
+docker login tipsregistry.azurecr.io
 ```
 push your Docker to azure resitry container
 ```bash
